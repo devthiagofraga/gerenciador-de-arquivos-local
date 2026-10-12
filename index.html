@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Arquivos & Pastas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <!-- Cabeçalho com ações -->
+        <header class="toolbar">
+            <h2>📁 Meu Drive Local</h2>
+            <div class="actions">
+                <button id="btn-voltar" title="Voltar para a pasta anterior">⬅ Voltar</button>
+                <button id="btn-abrir-pasta">📂 Abrir Pasta Real</button>
+                <button id="btn-nova-pasta">+ Nova Pasta</button>
+                <button id="btn-novo-arquivo">+ Novo Arquivo</button>
+            </div>
+        </header>
+
+        <!-- Barra de Navegação de Caminho (Breadcrumb) -->
+        <nav class="breadcrumb" id="breadcrumb">
+            <span>Raiz /</span>
+        </nav>
+
+        <!-- Área Principal de Exibição dos Itens -->
+        <main class="file-explorer" id="file-explorer">
+            <!-- Os arquivos e pastas serão renderizados dinamicamente aqui via JavaScript -->
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

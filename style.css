@@ -1,0 +1,112 @@
+/* Reset básico e tipografia */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f6f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+/* Container principal da aplicação */
+.app-container {
+    width: 100%;
+    max-width: 900px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+/* Barra de Ferramentas / Cabeçalho */
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 24px;
+    background-color: #2c3e50;
+    color: #ffffff;
+}
+
+.toolbar h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.actions button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-left: 8px;
+    transition: background-color 0.2s ease;
+}
+
+.actions button:hover {
+    background-color: #2980b9;
+}
+
+/* Caminho de Navegação (Breadcrumb) */
+.breadcrumb {
+    padding: 12px 24px;
+    background-color: #ecf0f1;
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 0.9rem;
+    color: #7f8c8d;
+}
+
+/* Área de Exibição dos Arquivos e Pastas */
+.file-explorer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    gap: 16px;
+    padding: 24px;
+    min-height: 300px;
+}
+
+/* Cartão de Item (Pasta ou Arquivo) */
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #fafafa;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.2s ease;
+    text-align: center;
+    word-break: break-word;
+}
+
+.item:hover {
+    background-color: #eaf2f8;
+    border-color: #3498db;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.item span {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.empty-message {
+    grid-column: 1 / -1;
+    text-align: center;
+    color: #bdc3c7;
+    margin-top: 40px;
+    font-style: italic;
+}
